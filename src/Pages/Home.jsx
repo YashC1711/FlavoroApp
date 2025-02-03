@@ -1,18 +1,17 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import CategoryMenu from '../components/CategoryMenu'
-import FootItem from '../components/FootItem'
-import Cart from '../components/Cart'
-
+import React from "react";
+import Navbar from "../components/Navbar";
+import CategoryMenu from "../components/CategoryMenu";
+import FoodItems from "../components/FoodItems";
+import Cart from "../components/Cart";
 const Home = () => {
   return (
     <>
-    <Navbar/>
-    <CategoryMenu/>
-    <FootItem/>
-    <Cart/>
+      <Navbar />
+      <CategoryMenu />
+      <FoodItems />
+      <Cart />  
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

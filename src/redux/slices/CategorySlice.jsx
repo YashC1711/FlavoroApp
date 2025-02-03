@@ -1,17 +1,16 @@
-import {createSlice} from "@reduxjs/toolkit";
-import CategoryMenu from "../../components/CategoryMenu";
+import { createSlice } from "@reduxjs/toolkit";
 
 const CategorySlice = createSlice({
-    name : "Category",
-    initialState : {
-        category:"All",
+  name: "category",
+  initialState: {
+    category: "All",
+  },
+  reducers: {
+    setCategory: (state, action) => {
+      state.category = action.payload;
     },
-    reducers:{
-        setCategory: (state,action) =>{
-            state.category = action.payload;
-        },
-    },
+  },
 });
 
-export const {setCategory} = CategorySlice.actions;
-export default CategorySlice.reducer
+export const { setCategory } = CategorySlice.actions;
+export default CategorySlice.reducer;
